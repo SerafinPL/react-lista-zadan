@@ -7,7 +7,7 @@ class Lista extends Component {
   constructor(props){
     super(props);
 
-    this.state{
+    this.state = {
       zadania : []
     }
 
@@ -15,7 +15,25 @@ class Lista extends Component {
   }
 
   dodajZadanie(event){
+    event.preventDefault();
 
+    var tablicaZadan = this.state.zadania;
+
+    if (this.refInput.value !== "") {
+      tablicaZadan.unshift({
+          text: this.refInput.value,
+          klucz: Date.now()
+      });
+    }
+
+    this.setState({
+      zadania: tablicaZadan
+    });
+
+    this.refInput.value = "";
+
+    console.log(tablicaZadan);
+    console.log(this.state.zadania);
   }
 
   render() {
@@ -23,7 +41,8 @@ class Lista extends Component {
       <div className="listaZadan">
         <div className="naglowek">
           <form onSubmit={this.dodajZadanie}>
-            <input placeholder="Wpisz zadanie"></input>
+            <input ref={(a) => this.refInput = a}
+              placeholder="Wpisz zadanie"></input>
             <button type="submit">Dodaj</button>
           </form>
         </div>
