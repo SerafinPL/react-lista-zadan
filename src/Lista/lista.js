@@ -1,7 +1,7 @@
 
-
 import React, {Component} from "react";
 
+import Zadania from "../zadania/zadania"
 
 class Lista extends Component {
   constructor(props){
@@ -46,6 +46,7 @@ class Lista extends Component {
             <button type="submit">Dodaj</button>
           </form>
         </div>
+        <Zadania elementy={this.state.zadania}/>
       </div>
     );
   }
