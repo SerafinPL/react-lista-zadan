@@ -1,7 +1,8 @@
 
 import React, {Component} from "react";
 
-import Zadania from "../zadania/zadania"
+import Zadania from "../zadania/zadania";
+import "./lista.css";
 
 class Lista extends Component {
   constructor(props){
@@ -50,6 +51,6 @@ class Lista extends Component {
       </div>
     );
   }
-}
+} // class Lista
 
 export default Lista;
