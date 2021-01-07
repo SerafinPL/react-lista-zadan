@@ -11,8 +11,8 @@ class Zadania extends Component {
 
   noweZadanie(element){
     return(
-      <li klucz={element.klucz}>{element.text}</li>
-    )
+      <li key={element.klucz}>{element.text}</li>
+    );
   }
 
   render() {
@@ -20,7 +20,7 @@ class Zadania extends Component {
       var elementyLisy = wpisy.map(this.noweZadanie);
 
       return(
-        <ul className>
+        <ul className="lista">
           {elementyLisy}
         </ul>
       );
