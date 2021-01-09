@@ -13,6 +13,7 @@ class Lista extends Component {
     }
 
     this.dodajZadanie = this.dodajZadanie.bind(this);
+    this.usunZadanie = this.usunZadanie.bind(this);
   }
 
   dodajZadanie(event){
@@ -37,6 +38,16 @@ class Lista extends Component {
     console.log(this.state.zadania);
   }
 
+  usunZadanie(kluczyk){
+    var filtrowanie = this.state.zadania.filter(function(item){
+      return (item.klucz !== kluczyk)
+    });
+
+    this.setState({
+      zadania: filtrowanie
+    });
+  }
+
   render() {
     return(
       <div className="listaZadan">
@@ -47,7 +58,8 @@ class Lista extends Component {
             <button type="submit">Dodaj</button>
           </form>
         </div>
-        <Zadania elementy={this.state.zadania}/>
+        <Zadania elementy={this.state.zadania}
+                  delete={this.usunZadanie}/>
       </div>
     );
   }
