@@ -7,17 +7,17 @@ class Zadania extends Component {
     super(props);
 
     this.noweZadanie = this.noweZadanie.bind(this);
-    this.delete = this.delete.bind(this);
+    this.usunZad = this.usunZad.bind(this);
   }
 
   noweZadanie(element){
     return(
-      <li onClick={() => this.delete(element.klucz)}
+      <li onClick={() => this.usunZad(element.klucz)}
         key={element.klucz}>{element.text}</li>
     );
   }
 
-  delete(klucz) {
+  usunZad(klucz) {
     this.props.delete(klucz);
   }
 
