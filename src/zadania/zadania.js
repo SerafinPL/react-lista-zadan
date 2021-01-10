@@ -1,5 +1,6 @@
 
 import React, {Component} from "react";
+import "./zadania.css";
 
 
 class Zadania extends Component {
@@ -12,8 +13,9 @@ class Zadania extends Component {
 
   noweZadanie(element){
     return(
-      <li onClick={() => this.usunZad(element.klucz)}
-        key={element.klucz}>{element.text}</li>
+      <li
+        key={element.klucz}>{element.text}
+        <span onClick={() => this.usunZad(element.klucz)}>X</span></li>
     );
   }
 
