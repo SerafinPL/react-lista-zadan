@@ -11,7 +11,7 @@ class Zadania extends Component {
     this.usunZad = this.usunZad.bind(this);
   }
 
-  noweZadanie(element){
+  noweZadanie = (element) => {
     return(
       <li
         key={element.klucz}>{element.text}
@@ -19,7 +19,7 @@ class Zadania extends Component {
     );
   }
 
-  usunZad(klucz) {
+  usunZad = (klucz) => {
     this.props.delete(klucz);
   }
 
