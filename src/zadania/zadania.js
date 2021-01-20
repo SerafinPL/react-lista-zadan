@@ -1,7 +1,7 @@
 
 import React, {Component} from "react";
 import "./zadania.css";
-
+import FlipMove from 'react-flip-move';
 
 class Zadania extends Component {
   constructor(props) {
@@ -29,7 +29,9 @@ class Zadania extends Component {
 
       return(
         <ul className="lista">
-          {elementyLisy}
+          <FlipMove duration={250} easing="ease-out">
+            {elementyLisy}
+          </FlipMove>
         </ul>
       );
   }
