@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/react-lista-zadan/static/css/main.8dc649c2.chunk.css",
-    "main.js": "/react-lista-zadan/static/js/main.72287476.chunk.js",
-    "main.js.map": "/react-lista-zadan/static/js/main.72287476.chunk.js.map",
+    "main.css": "/react-lista-zadan/static/css/main.58c3180d.chunk.css",
+    "main.js": "/react-lista-zadan/static/js/main.23998569.chunk.js",
+    "main.js.map": "/react-lista-zadan/static/js/main.23998569.chunk.js.map",
     "runtime-main.js": "/react-lista-zadan/static/js/runtime-main.155d27dd.js",
     "runtime-main.js.map": "/react-lista-zadan/static/js/runtime-main.155d27dd.js.map",
-    "static/js/2.1007529f.chunk.js": "/react-lista-zadan/static/js/2.1007529f.chunk.js",
-    "static/js/2.1007529f.chunk.js.map": "/react-lista-zadan/static/js/2.1007529f.chunk.js.map",
+    "static/js/2.e64a7af0.chunk.js": "/react-lista-zadan/static/js/2.e64a7af0.chunk.js",
+    "static/js/2.e64a7af0.chunk.js.map": "/react-lista-zadan/static/js/2.e64a7af0.chunk.js.map",
     "index.html": "/react-lista-zadan/index.html",
-    "static/css/main.8dc649c2.chunk.css.map": "/react-lista-zadan/static/css/main.8dc649c2.chunk.css.map",
-    "static/js/2.1007529f.chunk.js.LICENSE.txt": "/react-lista-zadan/static/js/2.1007529f.chunk.js.LICENSE.txt"
+    "static/css/main.58c3180d.chunk.css.map": "/react-lista-zadan/static/css/main.58c3180d.chunk.css.map",
+    "static/js/2.e64a7af0.chunk.js.LICENSE.txt": "/react-lista-zadan/static/js/2.e64a7af0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.155d27dd.js",
-    "static/js/2.1007529f.chunk.js",
-    "static/css/main.8dc649c2.chunk.css",
-    "static/js/main.72287476.chunk.js"
+    "static/js/2.e64a7af0.chunk.js",
+    "static/css/main.58c3180d.chunk.css",
+    "static/js/main.23998569.chunk.js"
   ]
 }
